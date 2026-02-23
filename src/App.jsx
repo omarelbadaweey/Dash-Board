@@ -28,7 +28,7 @@ function App() {
   return (
     <div className='mx-auto  bg-neutral-900'>
       <Header/>
-        <input className='bg-neutral-900 my-3  w-[50%] block mx-[auto] border-2 px-5 py-1 rounded-lg outline-none focus:scale-[1.05] focus:bg-black font-bold text-blue-300 placeholder:text-blue-300' value={search} type="text" placeholder='search...' onInput={(e) => setSearch(e.target.value)} />
+        <input className='bg-neutral-900 my-3  w-[50%] block mx-[auto] border-2 px-5 py-1 rounded-lg outline-none focus:scale-[1.05] focus:bg-black font-bold text-blue-300 placeholder:text-blue-300' value={search} type="text" placeholder='search.....' onInput={(e) => setSearch(e.target.value)} />
 
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 p-6 '>
           {
