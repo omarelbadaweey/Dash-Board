@@ -14,7 +14,7 @@ function App() {
   useEffect(() =>{
     
   axios
-  .get(`https://jsonplaceholder.typicode.com/users/${search}`)
+  .get(`${import.meta.env.VITE_API_URL}/users/${search}`)
   .then((res) => setUsers(res.data))
   // .catch((error) => alert(error))
   } , [])
@@ -40,7 +40,7 @@ function App() {
                   email={post.email}
                   avatar={`https://i.pravatar.cc/150?img=${post.id}`}
                   onDelete={handleDelete}
-               
+                  
                 
                 />
               ))):(
@@ -48,7 +48,6 @@ function App() {
               )
           }
       </div>
-    {/* <DarkUserDirectory/> */}
     <Footer/>
     </div>
     
